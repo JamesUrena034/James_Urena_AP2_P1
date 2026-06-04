@@ -20,6 +20,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -51,6 +52,13 @@ fun EditScreen(
                 .padding(padding)
                 .padding(16.dp)
         ) {
+            OutlinedTextField(
+                value = "",
+                onValueChange = { },
+                label = { Text("Nombre") },
+                modifier = Modifier.fillMaxWidth()
+            )
+
             Spacer(modifier = Modifier.weight(1f))
 
             Row(
@@ -76,8 +84,8 @@ fun EditScreen(
                     Text("Guardar")
                 }
             }
-            }
         }
+    }
 }
 
 @Preview(showBackground = true)
