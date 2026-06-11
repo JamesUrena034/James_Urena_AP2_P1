@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.navigation.compose.rememberNavController
-import edu.ucne.james_urena_ap2_p1.presentation.navigation.BorrameNavHost
+import edu.ucne.james_urena_ap2_p1.presentation.navigation.AmonestacionNavHost
 import edu.ucne.james_urena_ap2_p1.ui.theme.James_Urena_AP2_P1Theme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -17,7 +17,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             James_Urena_AP2_P1Theme {
                 val navHostController = rememberNavController()
-                BorrameNavHost(navHostController = navHostController)
+                AmonestacionNavHost(navHostController = navHostController)
             }
         }
     }
